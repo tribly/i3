@@ -87,27 +87,27 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1: term
-bindsym $mod+2 workspace 2: dev
-bindsym $mod+3 workspace 3: www
-bindsym $mod+4 workspace 4: social
-bindsym $mod+5 workspace 5: pdfs
-bindsym $mod+6 workspace 6: mail
+bindsym $mod+1 workspace term
+bindsym $mod+2 workspace dev
+bindsym $mod+3 workspace www
+bindsym $mod+4 workspace social
+bindsym $mod+5 workspace pdfs
+bindsym $mod+6 workspace mail
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+9 workspace games
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1: term
-bindsym $mod+Shift+2 move container to workspace 2: dev
-bindsym $mod+Shift+3 move container to workspace 3: www
-bindsym $mod+Shift+4 move container to workspace 4: social
-bindsym $mod+Shift+5 move container to workspace 5: pdfs
-bindsym $mod+Shift+6 move container to workspace 6: mail
+bindsym $mod+Shift+1 move container to workspace term
+bindsym $mod+Shift+2 move container to workspace dev
+bindsym $mod+Shift+3 move container to workspace www
+bindsym $mod+Shift+4 move container to workspace social
+bindsym $mod+Shift+5 move container to workspace pdfs
+bindsym $mod+Shift+6 move container to workspace mail
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+9 move container to workspace games
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
@@ -171,20 +171,20 @@ workspace_auto_back_and_forth yes
 
 # Start apps at boot
 exec --no-startup-id urxvt +tr -name scratchpad
-exec --no-startup-id urxvt +tr -name music -e ncmpcpp
+#exec --no-startup-id urxvt +tr -name music -e ncmpcpp
 
 
 #for_window [class="Pidgin"] floating enable
 
-assign [class="Thunderbird"] 6: mail
-assign [class="Chromium"] 3: www
-assign [class="Pidgin"] 4: social
-assign [class="Skype"] 4: social
-assign [class="Evince"] 5: pdfs
-assign [class="Steam"] 9
+assign [class="Thunderbird"] mail
+assign [class="Chromium"] www
+assign [class="Pidgin"] social
+assign [class="Skype"] social
+assign [class="Evince"] pdfs
+assign [class="Steam"] games
 
-for_window [class="URxvt" instance="scratchpad"] move scratchpad, border 1pixel, resize shrink width 130, resize shrink height 160
-for_window [class="URxvt" instance="music"] move scratchpad, border 1pixel, resize shrink width 230, resize shrink height 200
+#for_window [class="URxvt" instance="scratchpad"] move scratchpad, border 1pixel, resize shrink width 130, resize shrink height 160
+#for_window [class="URxvt" instance="music"] move scratchpad, border 1pixel, resize shrink width 230, resize shrink height 200
 for_window [class="Steam" title="Friends"] floating enable
 
 # Doesn't work
@@ -206,8 +206,8 @@ client.focused #008500 #008500 #ffffff #67E667
 ###################################
 ### Stuff for the scratchpad(s) ###
 ###################################
-bindsym $mod+Shift+p move scratchpad
-bindsym $mod+p [class="URxvt" instance="scratchpad"] scratchpad show, move position 1050px 25px
+#bindsym $mod+Shift+p move scratchpad
+#bindsym $mod+p [class="URxvt" instance="scratchpad"] scratchpad show, move position 1050px 25px
 #bindsym $mod+m [class="URxvt" instance="music"] scratchpad show, move position 50px 750px
 #bindsym $mod+m exec /home/heinz/scripts/mch
 
