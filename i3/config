@@ -215,5 +215,5 @@ client.focused #008500 #008500 #ffffff #67E667
 #bindsym $mod+m exec /home/heinz/scripts/mch
 
 new_window pixel 3
-workspace 4:social output DVI-I-1
+workspace 4:social output VGA-0
 exec --no-startup-id "i3-msg 'workspace 4:social; append_layout /home/heinz/configs/i3/i3/social.json'"
