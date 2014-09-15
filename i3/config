@@ -152,8 +152,8 @@ bar {
     }
 
         output DVI-I-1
-        tray_output primary
-        status_command i3status
+        tray_output none
+        status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status
         strip_workspace_numbers yes
 }
 
@@ -163,7 +163,7 @@ bar {
         focused_workspace #57C257 #008500 #ffffff
     }
         output VGA-0
-        status_command ~/.i3status.sh
+        status_command py3status -c ~/.i3status.conf -i ~/.i3/py3status
         tray_output none
         strip_workspace_numbers yes
 }
@@ -187,7 +187,7 @@ assign [class="Steam"] 9:games
 
 #for_window [class="URxvt" instance="scratchpad"] move scratchpad, border 1pixel, resize shrink width 130, resize shrink height 160
 #for_window [class="URxvt" instance="music"] move scratchpad, border 1pixel, resize shrink width 230, resize shrink height 200
-for_window [class="Steam" title="Friends"] floating enable
+#for_window [class="Steam" title="Friends"] floating enable
 
 # Doesn't work
 #bindsym $mod+Shift+s exec /home/heinz/.i3/switch.py
