@@ -32,7 +32,7 @@ MAX_WIDTH = 120
 
 # hide any indicator, if
 HIDE_WHEN_PAUSED = False
-HIDE_WHEN_STOPPED = True
+HIDE_WHEN_STOPPED = False
 
 # state characters (or strings). Actual of them replaces {state} placeholder in STRFORMAT
 STATE_CHARACTERS = {
@@ -49,7 +49,7 @@ can contain:
     In additional, information about next track also comes in, in analogue with current, but with next_ prefix,
     like {next_title}
 """
-STRFORMAT = "{state} №{pos}. {artist} - {title} [{time}] | {next_title}"
+STRFORMAT = "{state} {artist} - {title}"
 
 
 class Py3status:
