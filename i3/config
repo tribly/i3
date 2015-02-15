@@ -162,7 +162,7 @@ bar {
     {
         focused_workspace #57C257 #008500 #ffffff
     }
-        output VGA-0
+        output DVI-D-0
         status_command i3status -c ~/.i3status.conf
         strip_workspace_numbers yes
 }
