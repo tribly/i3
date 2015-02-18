@@ -152,7 +152,7 @@ bar {
     }
 
         output DVI-I-1
-        status_command i3status -c ~/.i3status.conf
+        status_command i3blocks
         strip_workspace_numbers yes
         tray_output VGA-0
 }
