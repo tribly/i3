@@ -152,7 +152,7 @@ bar {
     }
 
         output DVI-I-1
-        status_command i3blocks -c /home/heinz/configs/i3/i3blocks.conf
+        status_command i3blocks -vv -c /home/heinz/configs/i3/i3blocks.conf
         strip_workspace_numbers yes
         tray_output VGA-0
 }
@@ -163,7 +163,7 @@ bar {
         focused_workspace #57C257 #008500 #ffffff
     }
         output DVI-D-0
-        status_command i3status -c ~/.i3status.conf
+        status_command i3blocks -c /home/heinz/configs/i3/i3blocks.conf
         strip_workspace_numbers yes
 }
 
@@ -216,4 +216,4 @@ client.focused #008500 #008500 #ffffff #67E667
 
 new_window pixel 3
 workspace 4:social output DVI-D-0
-exec --no-startup-id "i3-msg 'workspace 4:social; append_layout /home/heinz/configs/i3/i3/social.json'"
+#exec --no-startup-id "i3-msg 'workspace 4:social; append_layout /home/heinz/configs/i3/i3/social.json'"
