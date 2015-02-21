@@ -26,7 +26,7 @@ import sys
 import json
 
 path = os.environ["HOME"] + "/.cache/i3blocks-dunst/notifications"
-strlimit = 114 # Maximum notification length (without message amount).
+strlimit = 40 # Maximum notification length (without message amount).
 
 # Returns the full notification text.
 def full_text(notification):
@@ -48,7 +48,7 @@ def color(notification):
     if notification["urgency"] == "CRITICAL":
         return "#FF0000"
     elif notification["urgency"] == "NORMAL":
-        return "#00FF00"
+        return "#00CC00"
     elif notification["urgency"] == "LOW":
         return "#FFFFFF"
     else:
