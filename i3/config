@@ -152,7 +152,7 @@ bar {
     }
 
         output DVI-I-1
-        status_command i3blocks -vv -c /home/heinz/configs/i3/i3blocks.conf
+        status_command i3blocks -vv -c /home/heinz/configs/i3/i3blocks-main.conf
         strip_workspace_numbers yes
         tray_output VGA-0
 }
@@ -163,7 +163,7 @@ bar {
         focused_workspace #57C257 #008500 #ffffff
     }
         output DVI-D-0
-        status_command i3blocks -c /home/heinz/configs/i3/i3blocks.conf
+        status_command i3blocks -c /home/heinz/configs/i3/i3blocks-right.conf
         strip_workspace_numbers yes
 }
 
