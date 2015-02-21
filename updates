@@ -1,0 +1,19 @@
+#!/bin/bash
+
+updates=$(checkupdates)
+
+count_normal=0
+
+while IFS= read -r line; do
+    if [[ $line == "linux" ]]; then
+        count_kernel=1
+    else
+        count_normal=$((count_normal + 1))
+    fi
+done <<< "$updates"
+
+if [[ $count_kernel ==  1 ]]; then
+    echo "Updates: $count_normal + kernel"
+else
+    echo "Updates: $count_normal"
+fi
