@@ -1,0 +1,3 @@
+#!/bin/bash
+
+df -h --output=avail $1 | tail -n1 | cut -d ' ' -f2
