@@ -190,6 +190,7 @@ assign [class="Steam"] 9:games
 #for_window [class="URxvt" instance="music"] move scratchpad, border 1pixel, resize shrink width 230, resize shrink height 200
 #for_window [class="Steam" title="Friends"] floating enable
 for_window [class="Pavucontrol"] floating enable
+for_window [instance="cvim-vim"] floating enable, resize shrink width 230, resize shrink height 209
 
 # Doesn't work
 #bindsym $mod+Shift+s exec /home/heinz/.i3/switch.py
