@@ -30,7 +30,7 @@ bindsym $mod+Return exec urxvt -si
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -l 5 -y 425 -x 690 -w 300 -fn "Meslo LG S for Powerline-12:normal" -nb "#002A35"
+bindsym $mod+d exec dmenu_run -l 5 -y 500 -x 810 -w 300 -fn "Meslo LG S for Powerline-12:normal" -nb "#002A35"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
