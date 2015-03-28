@@ -173,11 +173,8 @@ focus_follows_mouse no
 workspace_auto_back_and_forth yes
 mouse_warping none
 
-# Start apps at boot
-#exec --no-startup-id urxvt +tr -name music -e ncmpcpp
-
-
-#for_window [class="Pidgin"] floating enable
+gaps inner 10
+gaps outer 1
 
 assign [class="Thunderbird"] 6:mail
 assign [class="Chromium"] 3:www
@@ -188,14 +185,9 @@ assign [class="Evince"] 5:pdfs
 assign [class="Transmission-gtk"] 8:torrent
 assign [class="Steam"] 9:games
 
-#for_window [class="URxvt" instance="scratchpad"] move scratchpad, border 1pixel, resize shrink width 130, resize shrink height 160
-#for_window [class="URxvt" instance="music"] move scratchpad, border 1pixel, resize shrink width 230, resize shrink height 200
-#for_window [class="Steam" title="Friends"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [instance="cvim-vim"] floating enable, resize shrink width 230, resize shrink height 209
-
-# Doesn't work
-#bindsym $mod+Shift+s exec /home/heinz/.i3/switch.py
+for_window [class="^.*"] border pixel 5
 
 # Turn off monitors
 bindsym $mod+b exec "xset dpms force off"
@@ -221,3 +213,4 @@ client.focused #008500 #008500 #ffffff #67E667
 new_window pixel 3
 workspace 4:social output DVI-D-0
 #exec --no-startup-id "i3-msg 'workspace 4:social; append_layout /home/heinz/configs/i3/i3/social.json'"
+#
