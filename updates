@@ -2,12 +2,11 @@
 
 count_normal=-1
 
-while IFS= read -r line; do
+while IFS="\n" read -r line; do
     if [[ $line == "linux" ]]; then
         count_kernel=1
-    else
-        count_normal=$((count_normal + 1))
     fi
+    count_normal=$((count_normal + 1))
 done <<< "$(checkupdates)"
 
 if [[ $count_normal == 0 ]]; then
