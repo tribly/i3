@@ -93,7 +93,7 @@ bindsym $mod+3 workspace 3:www
 bindsym $mod+4 workspace 4:social
 bindsym $mod+5 workspace 5:pdfs
 bindsym $mod+6 workspace 6:mail
-bindsym $mod+7 workspace 7:7
+bindsym $mod+7 workspace 7:media
 bindsym $mod+8 workspace 8:torrent
 bindsym $mod+9 workspace 9:games
 bindsym $mod+0 workspace 10:void
@@ -105,7 +105,7 @@ bindsym $mod+Shift+3 move container to workspace 3:www
 bindsym $mod+Shift+4 move container to workspace 4:social
 bindsym $mod+Shift+5 move container to workspace 5:pdfs
 bindsym $mod+Shift+6 move container to workspace 6:mail
-bindsym $mod+Shift+7 move container to workspace 7:7
+bindsym $mod+Shift+7 move container to workspace 7:media
 bindsym $mod+Shift+8 move container to workspace 8:torrent
 bindsym $mod+Shift+9 move container to workspace 9:games
 bindsym $mod+Shift+0 move container to workspace 10:void
@@ -182,6 +182,7 @@ assign [class="Pidgin"] 4:social
 assign [class="Skype"] 4:social
 assign [class="Turpial"] 4:social
 assign [class="Evince"] 5:pdfs
+assign [class="Spotify Free"] 7:media
 assign [class="Transmission-gtk"] 8:torrent
 assign [class="Steam"] 9:games
 
