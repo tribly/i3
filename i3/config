@@ -24,7 +24,7 @@ font pango:Source Code Pro for Powerline Bold 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt -si
+bindsym $mod+Return exec urxvtc -si
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -182,7 +182,7 @@ assign [class="Pidgin"] 4:social
 assign [class="Skype"] 4:social
 assign [class="Turpial"] 4:social
 assign [class="Evince"] 5:pdfs
-assign [class="Spotify Free"] 7:media
+assign [class="[Ss]potify"] 7:media
 assign [class="Transmission-gtk"] 8:torrent
 assign [class="Steam"] 9:games
 
