@@ -24,10 +24,13 @@ font pango:Source Code Pro for Powerline Bold 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc -si
+bindsym $mod+Return exec urxvt -si
+bindsym $mod+Shift+Return exec urxvt -si -cd "$(xcwd)"
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+bindsym $mod+o exec /home/heinz/scripts/mailcheck
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -l 5 -y 500 -x 810 -w 300 -fn "Meslo LG S for Powerline-12:normal" -nb "#002A35"
@@ -97,6 +100,12 @@ bindsym $mod+7 workspace 7:media
 bindsym $mod+8 workspace 8:torrent
 bindsym $mod+9 workspace 9:games
 bindsym $mod+0 workspace 10:void
+bindsym $mod+F1 workspace 11:lotus
+bindsym $mod+F2 workspace 12:burdock
+bindsym $mod+F3 workspace 13:ginsing
+bindsym $mod+F4 workspace 14:onion
+bindsym $mod+F5 workspace 15:yam
+bindsym $mod+F6 workspace 16:radish
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1:term
@@ -109,6 +118,12 @@ bindsym $mod+Shift+7 move container to workspace 7:media
 bindsym $mod+Shift+8 move container to workspace 8:torrent
 bindsym $mod+Shift+9 move container to workspace 9:games
 bindsym $mod+Shift+0 move container to workspace 10:void
+bindsym $mod+Shift+F1 move container to workspace 11:lotus
+bindsym $mod+Shift+F2 move container to workspace 12:burdock
+bindsym $mod+Shift+F3 move container to workspace 13:ginsing
+bindsym $mod+Shift+F4 move container to workspace 14:onion
+bindsym $mod+Shift+F5 move container to workspace 15:yam
+bindsym $mod+Shift+F6 move container to workspace 16:radish
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -182,11 +197,11 @@ assign [class="Pidgin"] 4:social
 assign [class="Skype"] 4:social
 assign [class="Turpial"] 4:social
 assign [class="Evince"] 5:pdfs
-assign [class="[Ss]potify"] 7:media
 assign [class="Transmission-gtk"] 8:torrent
 assign [class="Steam"] 9:games
 
 for_window [class="Pavucontrol"] floating enable
+for_window [class="Spotify"] move to workspace 7:media
 for_window [instance="cvim-vim"] floating enable, resize shrink width 230, resize shrink height 209
 for_window [class="^.*"] border pixel 5
 
