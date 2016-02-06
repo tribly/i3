@@ -192,8 +192,9 @@ gaps inner 10
 gaps outer 1
 
 assign [class="Thunderbird"] 6:mail
-assign [class="Chromium"] 3:www
+assign [class="chromium"] 3:www
 assign [class="Pidgin"] 4:social
+assign [class="TeamSpeak 3"] 4:social
 assign [class="Skype"] 4:social
 assign [class="Turpial"] 4:social
 assign [class="Evince"] 5:pdfs
