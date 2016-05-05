@@ -1,3 +1,18 @@
 #!/bin/bash
 
-df -h --output=avail $1 | tail -n1 | sed 's/ //g'
+total=$(df -h --output=pcent $1 | tail -n1 | sed 's/ //g' | sed 's/%//')
+space=$(df -h --output=avail $1 | tail -n1 | sed 's/ //g')
+
+echo $space
+echo $space
+
+awk -v total=$total '
+    BEGIN {
+        if (total >= 90) {
+            print "#FF0000";
+        }
+        else if (total >= 70) {
+            print "#FFA500";
+        }
+    }
+'

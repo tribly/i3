@@ -26,7 +26,7 @@ import sys
 import json
 
 path = os.environ["HOME"] + "/.cache/i3blocks-dunst/notifications"
-strlimit = 40 # Maximum notification length (without message amount).
+strlimit = 80 # Maximum notification length (without message amount).
 
 # Returns the full notification text.
 def full_text(notification):

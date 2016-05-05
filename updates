@@ -12,7 +12,7 @@ done <<< "$(checkupdates)"
 if [[ $count_normal == 0 ]]; then
     exit
 elif [[ $count_kernel ==  1 ]]; then
-    echo "Updates: $count_normal + kernel"
+    echo "$count_normal + kernel"
 else
-    echo "Updates: $count_normal"
+    echo "$count_normal"
 fi
