@@ -166,6 +166,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     height 24
+    tray_output none
 
     colors {
         focused_workspace #008500 #005600 #ffffff
@@ -178,6 +179,7 @@ bar {
 
 bar {
     height 24
+    tray_output DVI-D-0
 
     colors
     {
