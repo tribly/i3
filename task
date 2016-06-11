@@ -1,0 +1,32 @@
+#!/bin/bash
+
+task_tmp="/tmp/tmp.i3blocktask"
+
+# Check if the file is empty
+# if so, we are starting for the first time,
+# so don't show the rofi dialoge
+if [ ! -s "$task_tmp" ]; then
+    name="$(task minimal | \
+        head -n 4 | \
+        tail -n 1 | \
+        cut -d ' ' -f3-)"
+    echo "$name" > "$task_tmp"
+    echo "$name"
+    exit
+fi
+
+to_show="$(task minimal | \
+            head -n -2 | \
+            tail -n +4 | \
+            cut -d ' ' -f2- | \
+            rofi -dmenu -separator-style "none" -hide-scrollbar -width 20 -m 0 -p "task:" )"
+
+if [ -z "$to_show" ]; then
+    # Cut the number, so we only get the actual task
+    cut -d ' ' -f2- "$task_tmp"
+else
+    echo "$to_show" | cut -d ' ' -f2-
+    echo "$to_show" > "$task_tmp"
+fi
+
+
