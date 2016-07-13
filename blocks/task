@@ -15,11 +15,14 @@ if [ ! -s "$task_file" ]; then
     exit
 fi
 
+# What we want to show in the i3bar
 to_show="$(task minimal | \
             head -n -2 | \
             tail -n +4 | \
-            cut -d ' ' -f2- | \
             rofi -dmenu -separator-style "none" -hide-scrollbar -width 20 -m 0 -p "task:" )"
+
+# Remove the leading whitespace
+to_show="${to_show## }"
 
 if [ -z "$to_show" ]; then
     # Cut the number, so we only get the actual task
