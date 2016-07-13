@@ -24,6 +24,7 @@ to_show="$(task minimal | \
 # Remove the leading whitespace
 to_show="${to_show## }"
 
+# If we didn't select anything, just show what's in the file
 if [ -z "$to_show" ]; then
     # Cut the number, so we only get the actual task
     cut -d ' ' -f2- "$task_file"
