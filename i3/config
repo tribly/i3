@@ -206,6 +206,8 @@ assign [class="TeamSpeak 3"] 4:
 assign [class="Skype"] 4:
 assign [class="Turpial"] 4:
 assign [class="Evince"] 5:
+assign [title="mutt"] 6:
+assign [title="chat"] 4:
 assign [class="Transmission-gtk"] 8:
 assign [class="Steam"] 9:
 
