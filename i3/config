@@ -200,7 +200,7 @@ gaps inner 10
 gaps outer 1
 
 assign [class="Thunderbird"] 6:
-assign [class="chromium"] 3:
+assign [class="Chromium"] 3:
 assign [class="Pidgin"] 4:
 assign [class="TeamSpeak 3"] 4:
 assign [class="Skype"] 4:
