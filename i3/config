@@ -208,12 +208,12 @@ assign [class="Turpial"] 4:
 assign [class="Evince"] 5:
 assign [title="mutt"] 6:
 assign [title="chat"] 4:
+assign [class="Spotify"] 7:
 assign [class="Transmission-gtk"] 8:
 assign [class="Steam"] 9:
 assign [title="Steam"] 9:
 
 for_window [class="Pavucontrol"] floating enable
-for_window [class="Spotify"] move to workspace 7:
 for_window [instance="cvim-vim"] floating enable, resize shrink width 230, resize shrink height 209
 for_window [class="^.*"] border pixel 5
 
