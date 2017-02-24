@@ -34,7 +34,7 @@ bindsym $mod+o exec /home/heinz/scripts/mailcheck
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -l 5 -y 500 -x 810 -w 300 -fn "Meslo LG S for Powerline-12:normal" -nb "#002A35"
-bindsym $mod+d exec rofi -show run -font "Envy Code R 11" -hide-scrollbar -lines 5 -width 20 -no-levenshtein-sort
+bindsym $mod+d exec zsh -c "rofi -show run -font 'Envy Code R 11' -hide-scrollbar -lines 5 -width 20 -no-levenshtein-sort"
 bindsym $mod+i exec rofi -show window -font "Envy Code R 11" -hide-scrollbar -lines 5 -width 20 -no-levenshtein-sort
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
